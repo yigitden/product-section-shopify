@@ -1261,6 +1261,26 @@
         "default": "scheme-5"
       },
       {
+        "type": "select",
+        "id": "sale_badge_type",
+        "label": "t:settings_schema.badges.settings.sale_badge_type.label",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:settings_schema.badges.settings.sale_badge_type.options.none"
+          },
+          {
+            "value": "range",
+            "label": "t:settings_schema.badges.settings.sale_badge_type.options.range"
+          },
+          {
+            "value": "text",
+            "label": "t:settings_schema.badges.settings.sale_badge_type.options.text"
+          }
+        ],
+        "default": "range",
+      },
+      {
         "type": "color_scheme",
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",

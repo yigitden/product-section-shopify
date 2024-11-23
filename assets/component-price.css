@@ -18,6 +18,14 @@
   text-align: right;
 }
 
+.price .price__container {
+  color: var(--color-foreground);
+}
+
+.price.price--on-sale .price-item.price-item--sale {
+  color: #C25151;
+}
+
 .price .price-item {
   display: inline-block;
   margin: 0 1rem 0 0;

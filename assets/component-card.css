@@ -276,6 +276,19 @@
   justify-self: flex-start;
 }
 
+.card__badge:has(.card__badge--discount) .card__badge--new-badge {
+  margin-block-start: .8rem;
+}
+
+.card__badge--new-badge {
+  width: fit-content;
+  justify-self: var(--new-badge-justify-self);
+}
+
+.card__badge--new-badge.right {
+  --new-badge-justify-self: flex-end;
+}
+
 .card__badge.top {
   align-self: flex-start;
   grid-row-start: 1;
@@ -506,6 +519,9 @@
   margin-top: 1rem;
 }
 
+.card__badge {
+  display: grid;
+}
 /* Card Shapes */
 
 .card--shape .card__content {

@@ -23,6 +23,13 @@
   height: 100%;
 }
 
+.quick-add.quick-add__icon {
+  position: absolute;
+  top: calc(62.5% - 0.2rem);
+  margin: 0;
+  right: 1rem;
+}
+
 .quick-add-modal[open] {
   opacity: 1;
   visibility: visible;
@@ -358,8 +365,13 @@ quick-add-modal .product-form__buttons {
   padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
+  min-height: 4rem;
+  transition: background-color 0.4s ease, transform 0.2s ease;
 }
-
+.quick-add__submit:hover {
+  background-color: rgba(var(--color-button), calc(var(--alpha-button-background) * 0.7));
+  transform: translateY(-1px);
+}
 quick-add-modal .product-media-container.constrain-height {
   --viewport-offset: calc((var(--modal-height-offset) + var(--modal-padding) + var(--popup-border-width)) * 2);
 }

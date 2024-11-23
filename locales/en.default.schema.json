@@ -106,6 +106,14 @@
         "sale_badge_color_scheme": {
           "label": "Sale badge color scheme"
         },
+        "sale_badge_type": {
+          "label": "Sale badge type",
+          "options": {
+            "range": "Range",
+            "text": "Text",
+            "none": "None"
+          }
+        },
         "sold_out_badge_color_scheme": {
           "label": "Sold out badge color scheme"
         }
@@ -394,6 +402,22 @@
         "section_padding_heading": "Section padding",
         "padding_top": "Top padding",
         "padding_bottom": "Bottom padding"
+      },
+      "content": {
+        "alignment": {
+          "label": "Content alignment",
+          "options": {
+            "start": {
+              "label": "Start"
+            },
+            "center": {
+              "label": "Center"
+            },
+            "end": {
+              "label": "End"
+            }
+          }
+        }
       },
       "spacing": "Spacing",
       "colors": {
@@ -1511,6 +1535,106 @@
       },
       "presets": {
         "name": "Image with text"
+      }
+    },
+    "product-collection": {
+      "name": "Product collection",
+      "settings": {
+        "title": {
+          "label": "Heading",
+          "default": "Product collection"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "price_display": {
+          "label": "Price display",
+          "options__1": {
+            "label": "Normal"
+          },
+          "options__2": {
+            "label": "Next to title"
+          }
+        },
+        "show_new_badge": {
+          "label": "Show new badge"
+        },
+        "new_badge_day": {
+          "label": "Set day to show new badge"
+        },
+        "new_badge_text": {
+          "label": "New badge label"
+        },
+        "new_badge_color_scheme": {
+          "label": "New badge color scheme"
+        },
+        "description_style": {
+          "label": "Description style",
+          "options__1": {
+            "label": "Body"
+          },
+          "options__2": {
+            "label": "Subtitle"
+          },
+          "options__3": {
+            "label": "Uppercase"
+          }
+        },
+        "products": {
+          "label": "Products"
+        },
+        "products_to_show": {
+          "label": "Maximum products to show"
+        },
+        "columns_desktop": {
+          "label": "Number of columns on desktop"
+        },
+        "enable_desktop_slider": {
+          "label": "Enable carousel on desktop"
+        },
+        "full_width": {
+          "label": "Make products full width"
+        },
+        "header": {
+          "content": "Product card"
+        },
+        "image_ratio": {
+          "label": "Image ratio",
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "enable_quick_buy": {
+          "label": "Enable quick add button",
+          "info": "Optimal with popup or drawer cart type."
+        },
+        "header_mobile": {
+          "content": "Mobile Layout"
+        },
+        "columns_mobile": {
+          "label": "Number of columns on mobile",
+          "options__1": {
+            "label": "1 column"
+          },
+          "options__2": {
+            "label": "2 columns"
+          }
+        },
+        "swipe_on_mobile": {
+          "label": "Enable swipe on mobile"
+        }
+      },
+      "presets": {
+        "name": "Product collection"
       }
     },
     "multirow": {
