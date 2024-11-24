@@ -149,12 +149,13 @@
                 </span>
               {%- endif -%}
               {% if section.settings.show_new_badge and section.settings.new_badge_text != blank %}
-                {% assign created_at = product.created_at | date: '%B %d, %Y' %}
-                {% assign current_time = 'now' | date: '%B %d, %Y' %}
-                {% assign duration = 15 %}
-                
-                {% assign days_since_creation = current_time | minus: created_at %}
-                {% if days_since_creation <= duration %}
+                {% assign product_created_at = product.created_at | date: "%s" %}
+                {% assign current_time = "now" | date: "%s" %}
+
+                {% assign seconds_since_creation = current_time | minus: product_created_at %}
+                {% assign days_since_creation = seconds_since_creation | divided_by: 86400 %}
+
+                {% if days_since_creation <= section.settings.new_badge_day %}
                   <span class="card__badge--new-badge {{ settings.badge_position }} badge badge--bottom-left color-{{ section.settings.new_badge_color_scheme }}">{{ section.settings.new_badge_text }}</span>
                 {% endif %}
               {%- endif -%}
