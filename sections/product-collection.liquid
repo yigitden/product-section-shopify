@@ -58,20 +58,6 @@
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
-  accessibility
-  {% assign created_at = product.created_at | date: '%B %d, %Y' %}
-  {% assign current_time = 'now' | date: '%B %d, %Y' %}
-  {% assign duration = 15 %}
-  
-  {% assign days_since_creation = current_time | minus: created_at %}
-  days_since_creation {{ days_since_creation }}</br>
-  duration {{ duration }}}</br>
-  current_time {{ current_time }}}</br>
-  created_at {{ created_at }}}</br>
-  {% if days_since_creation <= duration %}
-    <!-- 15 gün içinde, 'Yeni' rozetini göster -->
-    <span class="new-badge">Yeni</span>
-  {% endif %}
   <div
     class="product-collection section-{{ section.id }}-padding{% if section.settings.full_width %} product-collection--full-width{% endif %}"
     id="collection-{{ section.id }}"

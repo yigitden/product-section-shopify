@@ -110,7 +110,7 @@
           "label": "Sale badge type",
           "options": {
             "range": "Range",
-            "text": "Text",
+            "text": "Price",
             "none": "None"
           }
         },
